@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+.layout {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.heading {
+  text-align: center;
+}
+.answer-box {
+  width: 700px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  padding: 24px;
+}
+
+.prompt-input {
+  height: 50px;
+  padding: 24px;
+  width: 75%;
+  border: none;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  -moz-box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  box-shadow: 0px 0px 25px -2px rgba(122,122,122,1);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.input-area {
+  margin-top: 24px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.send-btn {
+  background-color: lightblue;
+  width: 22%;
+}
+
+@media screen and (max-width: 750px) {
+  .layout {
+    padding: 12px;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .answer-box {
+    width: 95%;
+  }
+  .input-area {
+    width: 95%;
+  }
+}
